@@ -2,15 +2,15 @@ package Entities;
 
 public class Customer {
     private String name;
-    private int no;
+    private int houseNumber;
     private String meterNumber;
 
     public Customer() {
     }
 
-    public Customer(String name, int no, String meterNumber) {
+    public Customer(String name, int houseNumber, String meterNumber) {
         this.name = name;
-        this.no = no;
+        this.houseNumber = houseNumber;
         this.meterNumber = meterNumber;
     }
 
@@ -22,12 +22,12 @@ public class Customer {
         this.name = name;
     }
 
-    public int getNo() {
-        return no;
+    public int getHouseNumber() {
+        return houseNumber;
     }
 
-    public void setNo(int no) {
-        this.no = no;
+    public void setHouseNumber(int houseNumber) {
+        this.houseNumber = houseNumber;
     }
 
     public String getMeterNumber() {
@@ -41,7 +41,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Tên khách hàng: " + name + "\n" +
-                "Số nhà: " + no + "\n" +
+                "Số nhà: " + houseNumber + "\n" +
                 "Mã số công tơ: " + meterNumber + "\n";
     }
 }

@@ -12,10 +12,10 @@ public class Menus {
         System.out.println("Nhập tên khách hàng: ");
         String name = sc.nextLine();
         System.out.println("Nhập số nhà của khách hàng: ");
-        int no = Integer.parseInt(sc.nextLine());
+        int houseNumber = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập mã số công tơ của khách hàng: ");
         String meterNumber = sc.nextLine();
-        Customer customer = new Customer(name, no, meterNumber);
+        Customer customer = new Customer(name, houseNumber, meterNumber);
         return customer;
     }
 
